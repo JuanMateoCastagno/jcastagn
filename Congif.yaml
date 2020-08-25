@@ -1,5 +1,5 @@
 steps:
-- script: cd C:\Program Files\Blue Prism Limited\Blue Prism Automate
+- script: dir
   displayName: Navigate to the right folder
 - task: CmdLine@2
   inputs:
