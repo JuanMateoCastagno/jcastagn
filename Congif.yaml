@@ -1,0 +1,4 @@
+- task: CmdLine@2
+  inputs:
+    script: cd C:\Program Files\Blue Prism Limited\Blue Prism Automate
+            AutomateC.exe /user admin admin /run sleep
