@@ -1,5 +1,10 @@
 steps:
 - script: cd C:\Program Files\Blue Prism Limited\Blue Prism Automate
   displayName: Navigate to the right folder
-- script: AutomateC.exe /user admin admin /run sleep
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo cd C:\Program Files\Blue Prism Limited\Blue Prism Automate
+      
+      echo AutomateC.exe /user admin admin /run sleep
   displayName: nitialize automatizacion
