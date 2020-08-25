@@ -8,3 +8,10 @@ steps:
       
       echo AutomateC.exe /user admin admin /run sleep
   displayName: nitialize automatizacion
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory) *.bprelease'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
