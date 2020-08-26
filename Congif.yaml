@@ -10,8 +10,8 @@ steps:
   displayName: nitialize automatizacion
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '**.bprelease'
-    includeRootFolder: false
+    rootFolderOrFile: 'sleee.bprelease'
+    includeRootFolder: true
     archiveType: 'zip'
     archiveFile: 'slep.zip'
     replaceExistingArchive: true
