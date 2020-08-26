@@ -10,8 +10,13 @@ steps:
   displayName: nitialize automatizacion
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'Sleeep.bprelease'
+    rootFolderOrFile: '**.bprelease'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: 'slep.zip'
     replaceExistingArchive: true
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'zip'
+    publishLocation: 'Container'
