@@ -10,7 +10,7 @@ steps:
   displayName: nitialize automatizacion
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'sleeep.bprelease'
+    rootFolderOrFile: 'Sleeep.bprelease'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: 'slep.zip'
